@@ -9,3 +9,8 @@ supports "windows"
 
 recipe "services::restart", "Restarts a windows service"
 
+attribute "services/name",
+  :display_name => "name",
+  :required => "required",
+  :recipes => ["services::restart"]
+

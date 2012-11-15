@@ -21,6 +21,18 @@
   "replacing": {
   },
   "attributes": {
+    "services/name": {
+      "display_name": "name",
+      "required": "required",
+      "recipes": [
+        "services::restart"
+      ],
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string"
+    }
   },
   "groupings": {
   },
