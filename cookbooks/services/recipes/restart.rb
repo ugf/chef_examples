@@ -1,3 +1,7 @@
 service node[:services][:name] do
-  action :restart
+  case node[:platform]
+    when "windows"
+      Chef::Provider::Service::Windows
+  end
+  action [:restart]
 end

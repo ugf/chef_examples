@@ -7,7 +7,7 @@ version          "0.0.1"
 
 supports "windows"
 
-recipe "services::restart", "Restarts a windows service"
+recipe "services::restart", "Restarts a service"
 
 attribute "services/name",
   :display_name => "name",
