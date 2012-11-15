@@ -37,7 +37,7 @@
   "groupings": {
   },
   "recipes": {
-    "services::restart": "Restarts a windows service"
+    "services::restart": "Restarts a service"
   },
   "version": "0.0.1"
 }

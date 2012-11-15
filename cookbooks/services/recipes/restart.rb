@@ -1,3 +1,5 @@
+require 'chef/providers'
+
 service node[:services][:name] do
   case node[:platform]
     when "windows"
