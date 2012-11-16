@@ -9,5 +9,10 @@ supports "windows"
 
 depends "windows"
 
-recipe "windows-examples::execute_batch", "executes a batch file"
+recipe "windows_examples::execute_batch", "executes a batch file"
+
+attribute "windows_examples/administrator_password",
+  :display_name => "administrator password",
+  :required => "required",
+  :recipes => ["windows_examples::execute_batch"]
 
