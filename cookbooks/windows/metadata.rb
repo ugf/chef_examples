@@ -7,5 +7,7 @@ version          "0.0.1"
 
 supports "windows"
 
+depends "opscode-windows"
+
 recipe "windows::execute_batch", "executes a batch file"
 
