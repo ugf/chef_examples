@@ -9,7 +9,6 @@
     "windows": ">= 0.0.0"
   },
   "dependencies": {
-    "chef_handler": ">= 0.0.0"
   },
   "recommendations": {
   },
