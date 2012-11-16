@@ -1,13 +1,8 @@
-maintainer       "Cloud Infrastructure"
-maintainer_email "csf@ultimatesoftware.com"
-license          "our license"
-description      "Examples of specific Chef features in windows"
-long_description ""
-version          "0.0.1"
-
-supports "windows"
-
-depends "opscode-windows"
-
-recipe "windows::execute_batch", "executes a batch file"
-
+maintainer       "Opscode, Inc."
+maintainer_email "cookbooks@opscode.com"
+license          "Apache 2.0"
+description      "Provides a set of useful Windows-specific primitives."
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          "1.3.4"
+supports         "windows"
+depends          "chef_handler"
