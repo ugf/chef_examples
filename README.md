@@ -28,7 +28,7 @@ http://wiki.opscode.com/display/chef/Installing+Chef+Client+on+Windows
     }
 
 4. execute chef solo
-  C:\opscode\chef\bin>chef-solo -c solo.rb -j node.json
+  c:\opscode\chef\bin>chef-solo -c solo.rb -j node.json
   you should see the recipe getting executed and the aspnet_state service restarted
 
 How to execute chef from a url

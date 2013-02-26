@@ -10,6 +10,7 @@ supports "windows"
 depends "windows"
 
 recipe "windows_examples::execute_batch", "executes a batch file"
+recipe "windows_examples::use_library", "uses library"
 
 attribute "windows_examples/administrator_password",
   :display_name => "administrator password",

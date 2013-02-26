@@ -38,7 +38,8 @@
   "groupings": {
   },
   "recipes": {
-    "windows_examples::execute_batch": "executes a batch file"
+    "windows_examples::execute_batch": "executes a batch file",
+    "windows_examples::use_library": "uses library"
   },
   "version": "0.0.1"
 }
