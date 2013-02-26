@@ -42,6 +42,13 @@ http://wiki.opscode.com/display/chef/Chef+Solo
 
   https://github.com/ugf/chef_examples/blob/bda3981e7d468978e30d1c62d9c118642eb36b92/chef-solo.tar.gz
 
-3. download cookbooks using chef
+3. run chef using repo from a url
 
-  chef-solo -c solo.rb -j node.json  -r https://github.com/ugf/chef_examples/blob/bda3981e7d468978e30d1c62d9c118642eb36b92/chef-solo.tar.gz
+  - create file C:\opscode\chef\bin\solo.rb with content:
+ 
+    file_cache_path "/var/chef-solo"
+    cookbook_path "/var/chef-solo/cookbooks"
+    json_attribs "http://s3.amazonaws.com/ugfinfrastructure/chef/node.json"
+    recipe_url "http://s3.amazonaws.com/ugfinfrastructure/chef/chef-solo.tar.gz"
+
+  - run chef-solo -c solo.rb
